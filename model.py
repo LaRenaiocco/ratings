@@ -55,6 +55,8 @@ class Movie(db.Model):
 class Rating(db.Model):
     """ A rating."""
 
+    __tablename__ = "ratings"
+
     rating_id = db.Column(db.Integer,
                            autoincrement=True,
                            primary_key=True)
